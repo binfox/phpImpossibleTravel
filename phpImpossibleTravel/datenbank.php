@@ -28,8 +28,10 @@ class datenbank {
     }
 
     public function exec_sql_insert($SqlString) {
+        //echo $SqlString.'<br/>';
         $Result = datenbank::$MySqlIcon->query($SqlString);
-	if ($Result == false) {
+        
+        if ($Result == false) {
             echo "ERROR: can not insert:<br/>".$SqlString.'<br/>';
         }
         return datenbank::$MySqlIcon->insert_id;
