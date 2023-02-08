@@ -43,13 +43,13 @@
       }
       $db->exec_sql_insert('insert into ipv4 values'.$values.';');
       fclose($handle);
-      rename('inputfiles/IP2LOCATION-LITE-DB5.CSV','inputfiles/ipv4.'.$Now->format('Y-m-d-H-i-s').',csv');
+      rename('inputfiles/IP2LOCATION-LITE-DB5.CSV','inputfiles/ipv4.'.$Now->format('Y-m-d-H-i-s').'.csv');
       
       echo 'IPV4 finished<br/>';
     }
   }
-  set_time_limit(900); // longer time to refresh the DB
-  if (file_exists('inputfiles/IP2LOCATION-LITE-DB5.IPV4.CSV')) {
+  set_time_limit(1500); // longer time to refresh the DB
+  if (file_exists('inputfiles/IP2LOCATION-LITE-DB5.IPV6.CSV')) {
     echo "IPV6 input found<br/>"; 
     $handle = fopen('inputfiles/IP2LOCATION-LITE-DB5.IPV6.CSV', "r");
     if ($handle) {
@@ -68,16 +68,16 @@
               $values = $values.',';
             }
           }
-          if (is_numeric($fields[1]) and is_numeric($fields[2])){
+          if (is_numeric($fields[1]) and is_numeric($fields[3])){
             $values = $values. '('.$fields[1].','.$fields[3].','.$fields[13].','.$fields[15].')';
           }
             
         }
                 
       }
-      $db->exec_sql_insert('insert into ipv4 values'.$values.';');
+      $db->exec_sql_insert('insert into ipv6 values'.$values.';');
       fclose($handle);
-      rename('inputfiles/IP2LOCATION-LITE-DB5.IPV6.CSV','inputfiles/ipv6.'.$Now->format('Y-m-d-H-i-s').',csv');
+      rename('inputfiles/IP2LOCATION-LITE-DB5.IPV6.CSV','inputfiles/ipv6.'.$Now->format('Y-m-d-H-i-s').'.csv');
       echo 'IPV6 finished<br/>';
     }
   }
