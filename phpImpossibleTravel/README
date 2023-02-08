@@ -1,0 +1,17 @@
+Hier gibt es noch nix zu sehen.
+
+Projekt: In PHP Datenschutzkonform impossible Travel mit IP erkennen.
+Dazu können die Daten nicht in Fremdstaaten abgefragt werden.
+Darum müssen die Daten von diesen GEO-Diensten herunter geladen werden und in eine Datenbank gebracht werden.
+Weiterhin ist die Berechnung der Entfernung und die ausgabe, ob es ein impossible Travel ist notwendig.
+
+Nothing to see here.
+
+Peoject: find impossible Tavel from IP with php.
+Focused on the privacy the Geo Data must be downloaded. The Geodata will be stored in a Database.
+
+
+Installation:
+1. Create a Database
+2. Login to the database
+3. Use the commands from sql/install.sql for the tables.
