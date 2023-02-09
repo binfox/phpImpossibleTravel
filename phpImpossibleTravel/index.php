@@ -8,6 +8,8 @@
     <body>
         <h1>phpImpossibleTravel</h1>
         
+        <a href="updatedatabase.php" target="_blank">init the database - see readme first</a><br/><br/>
+        
         <a href="call.php?fkt=position&ip=24.134.100.173" target="_blank">Geopos 24.134.100.1</a><br/>
         <a href="call.php?fkt=gmaps&ip=24.134.100.173" target="_blank">Google maps link 24.134.100.1</a><br/>
         <a href="call.php?fkt=position&ip=82.102.16.174" target="_blank">Geopos 82.102.16.174</a><br/>
