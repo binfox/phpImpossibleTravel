@@ -48,6 +48,8 @@
       echo 'IPV4 finished<br/>';
     }
   }
+  
+  
   set_time_limit(1500); // longer time to refresh the DB
   if (file_exists('inputfiles/IP2LOCATION-LITE-DB5.IPV6.CSV')) {
     echo "IPV6 input found<br/>"; 
