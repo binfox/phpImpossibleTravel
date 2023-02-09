@@ -93,7 +93,6 @@ function get_param($paramname){
 /*
  * https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula
  */
-
 function distance($lat1, $lon1, $lat2, $lon2) {
 
     $pi80 = M_PI / 180;
