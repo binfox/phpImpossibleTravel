@@ -1,6 +1,6 @@
 <?php
 
-require_once 'calc.php';
+require_once 'impossibletravel.php';
 
 $fkt=get_param("fkt");
 
